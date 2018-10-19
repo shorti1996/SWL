@@ -1,5 +1,0 @@
-1539964587.589      1 10.0.0.5 TCP_MISS/200 316 GET http://71778fc8f0ec:3128/squid-internal-dynamic/netdb - HIER_NONE/- -
-1539964587.646      0 10.0.0.4 TCP_MISS/200 316 GET http://71778fc8f0ec:3128/squid-internal-dynamic/netdb - HIER_NONE/- -
-1539964620.597      0 10.0.0.5 UDP_MISS/000 43 ICP_QUERY http://www.google.com/ - HIER_NONE/- -
-1539964620.597      0 10.0.0.5 TCP_MEM_HIT/200 555 GET http://71778fc8f0ec:3128/squid-internal-periodic/store_digest - HIER_NONE/- application/cache-digest
-1539964620.766    168 10.0.0.5 TCP_MISS/200 12663 GET http://www.google.com/ - HIER_DIRECT/172.217.16.36 text/html
