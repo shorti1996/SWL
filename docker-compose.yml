@@ -6,6 +6,8 @@ services:
         - "p2:p2"
         - "p3:p3"
       container_name: client
+      volumes:
+       - ./client/squid:/var/spool/squid
       networks:
         - network1
     p1:
@@ -13,6 +15,7 @@ services:
       volumes:
        - ./m1/conf:/etc/squid
        - ./m1/logs:/var/log/squid/
+       - ./m1/squid:/var/spool/squid
       networks:
         - network1
         - network2
@@ -25,6 +28,7 @@ services:
       volumes:
         - ./m2/conf:/etc/squid
         - ./m2/logs:/var/log/squid/
+        - ./m2/squid:/var/spool/squid
       networks:
         - network1
       links:
@@ -35,6 +39,7 @@ services:
       volumes:
        - ./m3/conf:/etc/squid
        - ./m3/logs:/var/log/squid/
+       - ./m3/squid:/var/spool/squid
       networks:
         - network1
       links:
