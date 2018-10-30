@@ -41,6 +41,7 @@ services:
         network1:
             aliases:
               - p2
+        network2:
       # links:
       #   - "p1:p1"
       #   - "p3:p3"
@@ -56,6 +57,7 @@ services:
         network1:
             aliases:
               - p3
+        network2:
       # links:
       #   - "p1:p1"
       #   - "p2:p2"
