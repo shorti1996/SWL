@@ -2,14 +2,17 @@ version: '3'
 services:
     client:
       build: ./client/.
-      links:
-        - "p2:p2"
-        - "p3:p3"
+      # links:
+      #   - "p1:p1"
+      #   - "p2:p2"
+      #   - "p3:p3"
       container_name: client
       volumes:
        - ./client/squid:/var/spool/squid
       networks:
-        - network1
+        network1:
+            aliases:
+              - client
     p1:
       build: ./m1/.
       volumes:
@@ -17,10 +20,15 @@ services:
        - ./m1/logs:/var/log/squid/
        - ./m1/squid:/var/spool/squid
       networks:
-        - network1
-        - network2
+        network1:
+            aliases:
+              - p1
+        network2:
         # network1:
                # ipv4_address: 10.0.1.3
+      # links:
+      #   - "p2:p2"
+      #   - "p3:p3"
       container_name: p1
 
     p2:
@@ -30,10 +38,14 @@ services:
         - ./m2/logs:/var/log/squid/
         - ./m2/squid:/var/spool/squid
       networks:
-        - network1
-      links:
-        - "p1:p1"
+        network1:
+            aliases:
+              - p2
+      # links:
+      #   - "p1:p1"
+      #   - "p3:p3"
       container_name: p2
+
     p3:
       build: ./m3/.
       volumes:
@@ -41,9 +53,12 @@ services:
        - ./m3/logs:/var/log/squid/
        - ./m3/squid:/var/spool/squid
       networks:
-        - network1
-      links:
-        - "p1:p1"
+        network1:
+            aliases:
+              - p3
+      # links:
+      #   - "p1:p1"
+      #   - "p2:p2"
       container_name: p3
 
 # volumes:
