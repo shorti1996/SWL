@@ -1,0 +1,3 @@
+1540944561.118      0 192.168.80.3 TCP_MISS/200 316 GET http://cce9a958e77c:3128/squid-internal-dynamic/netdb - HIER_NONE/- -
+1540944593.703      0 192.168.80.3 UDP_MISS/000 49 ICP_QUERY http://www.deepsloweasy.com/ - HIER_NONE/- -
+1540944594.846   1141 192.168.80.3 TCP_MISS/200 10586 GET http://www.deepsloweasy.com/ - HIER_DIRECT/192.169.155.198 text/html
