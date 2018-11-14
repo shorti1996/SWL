@@ -1,4 +1,0 @@
-1540941503.443  70043 172.24.0.2 TCP_MISS/503 4323 GET http://www.deepsloweasy.com/ - FIRST_PARENT_MISS/172.24.0.5 text/html
-1540941516.174      1 172.24.0.2 TCP_MISS/503 4323 GET http://www.deepsloweasy.com/ - FIRST_PARENT_MISS/172.24.0.5 text/html
-1540941518.954   1009 172.24.0.2 TCP_MISS/200 10697 GET http://www.deepsloweasy.com/ - FIRST_PARENT_MISS/172.24.0.3 text/html
-1540941519.487      1 172.24.0.2 TCP_MEM_HIT/200 10703 GET http://www.deepsloweasy.com/ - HIER_NONE/- text/html

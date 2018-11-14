@@ -1,5 +1,0 @@
-1540941135.927      0 172.22.0.5 TCP_MISS/200 316 GET http://5e10eef1d5e8:3128/squid-internal-dynamic/netdb - HIER_NONE/- -
-1540941172.953      0 172.22.0.5 UDP_MISS/000 49 ICP_QUERY http://www.deepsloweasy.com/ - HIER_NONE/- -
-1540941207.969  35009 172.22.0.5 TCP_MISS/503 4212 GET http://www.deepsloweasy.com/ - HIER_NONE/- text/html
-1540941229.181      0 172.22.0.5 UDP_MISS/000 49 ICP_QUERY http://www.deepsloweasy.com/ - HIER_NONE/- -
-1540941232.959      0 172.22.0.5 TCP_MEM_HIT/200 555 GET http://5e10eef1d5e8:3128/squid-internal-periodic/store_digest - HIER_NONE/- application/cache-digest
